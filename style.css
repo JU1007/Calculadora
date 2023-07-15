@@ -2,13 +2,18 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 body {
-    background-color:rgb(239, 243, 247);
+    background-image: url(imagenes/imanen.2.jpg);
+    background-position: 5100% 100%;
+    background-size: cover;
     font-family: "Montserrat"; 
-    color:rgb(15, 14, 14)
+    color:rgb(37, 37, 37)
+
 }
 
+ 
+
 #contenedor {
-    background-color: rgb(255, 0, 98);
+    background-image: url(imagenes/imanen.2.jpg);
     position:absolute;
     inset: 0;
     margin: auto;
@@ -30,7 +35,7 @@ body {
 }
 
 #detalle {
-    background: brown;
+    background: rgb(141, 72, 173);
     width: 50%;
     float: left;
     height: 100%;
@@ -41,6 +46,14 @@ body {
 h1 {
     font-family: "Montserrat"; 
     color:rgb(245, 239, 239)
+}
+h2{
+    font-family: "Montserrat" ;
+    color: rgb(188, 72, 192);
+    overflow: hidden;
+    padding: 10px;
+    font-size: 12px;
+    
 }
 ul {
     color:white;
@@ -54,7 +67,7 @@ ul {
     padding: 40px;
    
 
-}¨
+}
 
 input {
     width : 70%;
@@ -68,14 +81,29 @@ button {
         font-weight: bold;
         padding: 12px 45px;
         border-radius: 30px;
-        background-color: #FF416C;
-        border: 1px solid #FF416C;
+        background-color: #ca2ba8;
+        border: 1px solid #ff418a;
         Color: #FFFFFF;
         text-transform: uppercase;
         letter-spacing: 1px;
         transition: transform 20ms ease-in;
+        margin:5%;
 }
 
 button:active {
     transform: scale(0.95);
+}
+
+#error{
+    color: red;
+    font-weight: bold;
+    display: none;
+}
+
+.resultado{
+    color: aqua;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 5px;
+    display: none;
 }
