@@ -34,9 +34,9 @@ console.log( variable, typeof variable)
 console.log(falso, typeof falso)
 
 //Imprime en la consola el valor de la variable nulo y el tipo de dato que almacena.
-
+console.log(vacio, typeof vacio)
 //Imprime en la consola el valor de la variable indefinido y el tipo de dato que almacena.
-
+console.log(undefined, typeof indefinido)
 //Imprime en la consola el valor de la variable arreglo y el tipo de dato que almacena.
 
 
@@ -62,7 +62,7 @@ else  {
     console.log("El numero"+numero+"Es impar")
 } 
 //Escribe un programa que solicite al usuario que ingrese una letra y verifique si es una vocal o una consonante.
-let caracter ="A"
+let caracter="a"
 console.log(caracter)
 caracter = caracter.toLowerCase()
 console.log (caracter)
@@ -76,8 +76,29 @@ if (caracter ==="a" ||
         console.log ("El caracter es una consonante")
     }
 //Escribe un programa que solicite al usuario que ingrese una letra y verifique si es una vocal o una consonante.
-
+let caracteres="c"
+console.log(caracter)
+caracter = caracter.toLowerCase()
+console.log (caracter)
+if (caracter ==="a" ||
+    caracter === "e" ||
+    caracter === "i" ||
+    caracter === "o" ||
+    caracter === "u" ) {
+        console.log("El caracter es una vocal")
+    } else {
+        console.log ("El caracter es una consonante")
+    }
 //Escribe un programa que solicite al usuario que ingrese una edad y verifique si es mayor o menor de edad.
+let edad = Number (prompt ("Ingrese un numero"))
+console.log (edad)
+    if (edad >=18 ) {
+        console.log("El mayor de edad")
+    }
+    
+    else if (edad<18) {
+        console.log ("Es menor de edad")
+    }
 
 //Escribe un programa que solicite al usuario que ingrese un número del 1 al 7 y muestre un mensaje en la consola indicando el día de la semana correspondiente.
 
@@ -127,8 +148,17 @@ let dias = ["domingo",
 let input = 2
 console.log(dias[input-1])
 //Escribe una función que tome un array de números como argumento y devuelva el número más grande.
+let numeros = [-3,45,23,7,31,90,1];
 
+function menorMayor(arreglo){
+ return [Math.min(...arreglo),Math.max(...arreglo)]
+}
+
+console.log(menorMayor(numeros))
 //Escribe una función que tome un array de números como argumento y devuelva un array con los números ordenados de menor a mayor.
+int () a  = [7,2,4,8,3,9,1,5,10,6];
+  Arrays.sort(a);
+  System.out.println(Arrays.toString(a));
 
 //Escribe una función que tome dos arrays como argumentos y devuelva un array que contenga los elementos comunes entre ambos.
 
@@ -140,10 +170,6 @@ console.log(dias[input-1])
 
 
 //Bucles
-let miArray =
-for (let index = 0; index <= 5; index++) {
-    console.log(index)
-}
 
 
 //Escribe un bucle for que imprima en la consola los números del 1 al 10.
@@ -163,8 +189,15 @@ for (let index = 0; index <= 5; index++) {
 //DOM y eventos
 
 //Crea un archivo HTML con un botón y un div vacío. Usa JavaScript para agregar un mensaje al div cuando se hace clic en el botón.
-
+ 
 //Crea una función que cambie el color de fondo de un elemento HTML a rojo cuando el mouse se mueve sobre él. Agrega esta función como un listener de evento para el div del ejercicio anterior.
+function cambiarColor (id){
+   const cambiarColor = document.getElementById(id)
+    cambiarColor.addEventListener("mouseover", ()=>{
+      cambiarColor.style.background = "red";  
+    });
+    
+}
 
 //Crea una función que cambie el tamaño de fuente de un elemento HTML cuando se presiona una tecla en el teclado. Agrega esta función como un listener de evento para el div del ejercicio anterior.
 

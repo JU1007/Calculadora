@@ -18,7 +18,7 @@ body {
     inset: 0;
     margin: auto;
     text-align: center;
-    width: 900px;
+    width: 800px;
     height: 500px;
     border-radius: 10px;
     overflow: hidden;
@@ -101,7 +101,7 @@ button:active {
 }
 
 .resultado{
-    color: aqua;
+    color: rgb(164, 65, 177);
     font-weight: bold;
     font-size: 25px;
     margin-bottom: 5px;
